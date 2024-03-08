@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Barberia Alura </title>
+        <link rel="stylesheet" href="reset.css"><!--resert se saco de internet y sirve para resetear todos los estilos que esten en el navegador-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="banner/logo.png" alt="Logo de la barberia "></h1> <!-- ALT sirve para poner un texto alternativo si no carga la imagen-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Productos.html">PRODUCTOS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+
+        <main>
+            <form action=""><!--Empezamos a crear las etiquetas para crear un formulario-->
+                <label for="nombreApellido">Nombre y Apellido</label><!--es una caja de texto-->
+                <input type="text" id="nombreApellido" class="input-padron" required> <!--Crea una caja de texto / el REQUIRED sirve para hacer oblogatorio un campo 
+                   un input y un label siempre van casados por eso de pone id en input y en label en la parte form se pone el nombre del id-->
+            
+                <label for="correo">Correo Electronico</label>
+                <input type="text" id="correo" class="input-padron" required
+                placeholder="Email@dominiio.com"> <!--el placeholder sirve para sombrear en la caja de texto el formato que deseamos que escriban--> 
+
+                <label for="telefono">Telefono</label>
+                <input type="text" id="telefono" class="input-padron" required
+                placeholder="XX-XX-XX-XX-XX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="70" rows="10" class="input-padron" required></textarea><!--sirve para agregar una caja de texto espacial -->
+
+                <fieldset> <!-- se usa para dividir un tipo de datos espeficos-->
+                    <legend>Como le gustaria que lo contactemos</legend> <!--se usa especificamente en el filedset-->
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="Email" id="radio-email">Email</label>
+                     <!-- imput radio Sirve para hacer bolitas selectoras o radios-->
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="Telefono" id="radio-telefono">Telefono</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-whatsapp">Whatsapp</label>
+                    
+                </fieldset>
+
+               <fieldset>
+                    <fieldset>En que hoario le gustaria que lo contactemos</fieldset>
+                    <select name="" id="">
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+               </fieldset>
+
+
+
+                <label for="" class="checkbox"><input type="checkbox">Le gustaria recibir novedades</label>
+                <input type="submit" value="Enviar Formulario" class="enviar"> <!--Sirve para generar un boton "enviar"-->
+
+            </form>
+
+            <table><!--creamos una tabla -->
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8:00 A.M - 8:00 P.M</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8:00 A.M - 8:00 P.M</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8:00 A.M - 8:00 P.M</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+        <footer> <!-- pie de pagina -->
+            <img src="banner/logo-blanco.png" alt="Logo de la Barberia">
+            <p class="Copyright">&copy Copyright Barberia Alura 2024</p>
+        </footer>
+        
+    </body>
+</html>
